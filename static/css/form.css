@@ -1,0 +1,93 @@
+body {
+  background-image: url("./images/heart_bg.png");
+  background-size: auto;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "chiptune";
+  src: url("./font/ChiptuneValentineRegular-p7aRr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container-fluid {
+  width: 80%;
+  background-color: rgba(255, 184, 201, 0.8);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.card-img-top {
+  background-color: #ffff99;
+}
+.card {
+  width: 25rem;
+  border: 5px solid maroon;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+}
+.form-control {
+  border: 5px solid maroon;
+  border-radius: 10px;
+}
+.Date {
+  border: 5px solid maroon;
+  border-radius: 10px;
+}
+
+.card-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.Date,
+.form-control,
+.btn {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-label {
+  font-family: "chiptune";
+  color: #ff4d4d;
+}
+.modal-content {
+  background-color: #ffff99;
+}
+.modal-header,
+.modal-footer,
+.modal-body {
+  border: 2px solid maroon;
+}
+.modal-body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@media only screen and (max-width: 991px) {
+  .container-fluid {
+    width: 95%;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .col-7 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    width: 95%;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .col-7 {
+    width: 100%;
+  }
+}

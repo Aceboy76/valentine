@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="{% static 'css/form.css' %}" />
+</head>
+
+<body>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-7 col-sm-12">
+          <div class="pt-5">
+            <label for="exampleFormControlInput1" class="form-label fs-3">Enter Name</label>
+            <input type="text" class="form-control fs-5" id="exampleFormControlInput1" placeholder="Full Name"
+              name="name" />
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      <div class="row pt-100">
+        <div class="col"></div>
+        <div class="col-7 col-sm-12 d-flex justify-content-center">
+          <div class="date">
+            <label for="Date" class="form-label fs-3"> Date </label>
+            <br>
+            <input type="date" class="Date fs-5" id="Date" name="date" />
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row pt-100">
+        <div class="col"></div>
+        <div class="col-7 col-sm-12 d-flex justify-content-center">
+          <div class="card">
+            <img src="{% static 'css/images/coffee.gif' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text fs-4">
+                "I'm excited for our date! After you submit the form, I'll chat with you through Messenger. Let's keep
+                it
+                relaxed and go with the flow. We can discuss and pick a cozy coffee shop together. Looking forward to
+                it!"
+                &#9749;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-7 col-sm-12">
+          <div class="pt-100">
+            <label for="exampleFormControlTextarea1" class="form-label fs-3">Additional messages</label>
+            <textarea class="form-control fs-5" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row pt-100 pb-5 r">
+        <div class="col"></div>
+        <div class="col-7 col-sm-12 d-flex justify-content-center">
+          <button type="button" class="btn btn-danger fs-3 " data-bs-toggle="modal"
+            data-bs-target="#exampleModal">SUBMIT!!!</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Notice</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fs-4">
+
+                Just a quick heads-up to let you know that your Valentine form will be submitted! 🎉
+                <br>
+                <br>
+                Please ensure that both your name and the date are provided as required fields. Failure to provide these
+                details may result in an error!
+
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+    </div>
+    </div>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

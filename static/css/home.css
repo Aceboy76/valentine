@@ -1,0 +1,79 @@
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+@font-face {
+  font-family: "chiptune";
+  src: url("./font/ChiptuneValentineRegular-p7aRr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("./images/heart_bg.png");
+  background-size: auto;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 25rem;
+  border: 5px solid maroon;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.6);
+  background-color: #ffb8c9;
+}
+
+.card img {
+  padding: 10px;
+}
+
+.card-title {
+  font-family: "chiptune";
+}
+
+.card .col-10 a {
+  width: 100%;
+}
+
+#no {
+  position: relative;
+}
+
+.card-title {
+  color: #ff4d4d;
+}
+
+.card-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.btn {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media only screen and (max-width: 991px) {
+  .card {
+    margin: 10px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin: 20px;
+    width: 100%;
+  }
+
+  
+}
